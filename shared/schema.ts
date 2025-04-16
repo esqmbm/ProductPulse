@@ -10,9 +10,9 @@ export const users = pgTable("users", {
 
 export const riskAssessments = pgTable("risk_assessments", {
   id: serial("id").primaryKey(),
-  hazardName: text("hazard_name").notNull(),
+  hazardName: text("processing_activity").notNull(),
   likelihood: integer("likelihood").notNull(),
-  severity: integer("severity").notNull(),
+  severity: integer("impact_severity").notNull(),
   riskScore: integer("risk_score").notNull(),
   riskLevel: text("risk_level").notNull(),
   createdAt: text("created_at").notNull(),

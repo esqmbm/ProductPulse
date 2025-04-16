@@ -18,7 +18,7 @@ export default function RiskMatrix({ likelihood, severity }: RiskMatrixProps) {
     if (score >= 1 && score <= 4) return "bg-green-300"; // Low
     if (score >= 5 && score <= 12) return "bg-orange-400"; // Moderate
     if (score >= 13 && score <= 19) return "bg-red-500 text-white"; // High
-    if (score >= 20 && score <= 25) return "bg-red-700 text-white"; // Extreme
+    if (score >= 20 && score <= 25) return "bg-red-700 text-white"; // Critical
     return "bg-gray-100";
   };
 
@@ -39,7 +39,7 @@ export default function RiskMatrix({ likelihood, severity }: RiskMatrixProps) {
         <thead>
           <tr>
             <th className="p-2 border border-gray-300"></th>
-            <th className="p-2 border border-gray-300" colSpan={5}>Severity</th>
+            <th className="p-2 border border-gray-300" colSpan={5}>Impact Severity</th>
           </tr>
           <tr>
             <th className="p-2 border border-gray-300">Likelihood</th>
