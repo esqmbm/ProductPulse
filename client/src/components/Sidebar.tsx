@@ -5,8 +5,8 @@ export default function Sidebar() {
       description: "Create Data Protection Impact Assessments for your processing activities."
     },
     {
-      title: "Consent Manager",
-      description: "Helpful tool for managing user consent preferences and tracking cookie compliance across your sites."
+      title: "Risk Manager",
+      description: "Helpful tool for managing user risk."
     },
     {
       title: "PIA Score",
