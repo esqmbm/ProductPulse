@@ -1,4 +1,4 @@
-import { users, type User, type InsertUser } from "@shared/schema";
+import { users, riskAssessments, type User, type InsertUser, type RiskAssessment, type InsertRiskAssessment } from "@shared/schema";
 
 // modify the interface with any CRUD methods
 // you might need
@@ -7,15 +7,21 @@ export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
+  createRiskAssessment(riskAssessment: InsertRiskAssessment): Promise<RiskAssessment>;
+  getAllRiskAssessments(): Promise<RiskAssessment[]>;
 }
 
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
-  currentId: number;
+  private riskAssessments: Map<number, RiskAssessment>;
+  currentUserId: number;
+  currentRiskAssessmentId: number;
 
   constructor() {
     this.users = new Map();
-    this.currentId = 1;
+    this.riskAssessments = new Map();
+    this.currentUserId = 1;
+    this.currentRiskAssessmentId = 1;
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -29,10 +35,21 @@ export class MemStorage implements IStorage {
   }
 
   async createUser(insertUser: InsertUser): Promise<User> {
-    const id = this.currentId++;
+    const id = this.currentUserId++;
     const user: User = { ...insertUser, id };
     this.users.set(id, user);
     return user;
+  }
+
+  async createRiskAssessment(insertRiskAssessment: InsertRiskAssessment): Promise<RiskAssessment> {
+    const id = this.currentRiskAssessmentId++;
+    const riskAssessment: RiskAssessment = { ...insertRiskAssessment, id };
+    this.riskAssessments.set(id, riskAssessment);
+    return riskAssessment;
+  }
+
+  async getAllRiskAssessments(): Promise<RiskAssessment[]> {
+    return Array.from(this.riskAssessments.values());
   }
 }
 

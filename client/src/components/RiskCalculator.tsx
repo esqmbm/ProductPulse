@@ -83,10 +83,10 @@ export default function RiskCalculator() {
   return (
     <section id="calculator" className="md:w-3/4">
       <div className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-2xl font-bold mb-4">Safety Risk Assessment Matrix Calculator</h2>
+        <h2 className="text-2xl font-bold mb-4">Privacy Risk Assessment Matrix Calculator</h2>
         
         <p className="mb-6">
-          This web tool helps safety professionals evaluate workplace hazards by calculating a risk score from likelihood and severity ratings. It clearly indicates whether a hazard is Low, Moderate, High, or Extreme, aiding in decision-making and risk mitigation.
+          This web tool helps privacy professionals evaluate data processing activities by calculating a risk score from likelihood and impact severity ratings. It clearly indicates whether a privacy risk is Low, Moderate, High, or Critical, aiding in decision-making and privacy risk mitigation.
         </p>
         
         <Form {...form}>
@@ -96,10 +96,10 @@ export default function RiskCalculator() {
               name="hazardName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="font-medium">Hazard Name:</FormLabel>
+                  <FormLabel className="font-medium">Processing Activity:</FormLabel>
                   <FormControl>
                     <Input 
-                      placeholder="Enter hazard name" 
+                      placeholder="Enter processing activity name" 
                       {...field} 
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#007BFF] focus:border-[#007BFF]"
                     />
@@ -140,14 +140,14 @@ export default function RiskCalculator() {
               name="severity"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="font-medium">Severity (1-5):</FormLabel>
+                  <FormLabel className="font-medium">Impact Severity (1-5):</FormLabel>
                   <Select 
                     onValueChange={field.onChange} 
                     defaultValue={field.value}
                   >
                     <FormControl>
                       <SelectTrigger className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#007BFF] focus:border-[#007BFF]">
-                        <SelectValue placeholder="Select Severity" />
+                        <SelectValue placeholder="Select Impact Severity" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -166,7 +166,7 @@ export default function RiskCalculator() {
               type="submit" 
               className="w-full bg-[#007BFF] hover:bg-blue-600 text-white font-medium py-3 px-4 rounded-md transition duration-200"
             >
-              Calculate Risk
+              Calculate Privacy Risk
             </Button>
           </form>
         </Form>

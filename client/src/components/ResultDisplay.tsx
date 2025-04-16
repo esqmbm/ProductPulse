@@ -19,7 +19,7 @@ interface ResultDisplayProps {
 export default function ResultDisplay({ result, onReset }: ResultDisplayProps) {
   const handleExport = () => {
     // Create a simple CSV format
-    const csvContent = `"Hazard Name","Risk Score","Risk Level"
+    const csvContent = `"Processing Activity","Privacy Risk Score","Risk Level"
 "${result.hazardName}","${result.riskScore}","${result.riskLevel.text}"`;
     
     // Create blob and download link
@@ -27,7 +27,7 @@ export default function ResultDisplay({ result, onReset }: ResultDisplayProps) {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.setAttribute('href', url);
-    link.setAttribute('download', `risk_assessment_${result.hazardName.replace(/\s+/g, '_')}.csv`);
+    link.setAttribute('download', `privacy_risk_assessment_${result.hazardName.replace(/\s+/g, '_')}.csv`);
     link.style.visibility = 'hidden';
     document.body.appendChild(link);
     link.click();
@@ -36,12 +36,12 @@ export default function ResultDisplay({ result, onReset }: ResultDisplayProps) {
 
   return (
     <div className="mt-8">
-      <h3 className="text-xl font-semibold mb-4">Risk Assessment Result</h3>
+      <h3 className="text-xl font-semibold mb-4">Privacy Risk Assessment Result</h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-gray-50 p-4 rounded-md">
           <div className="mb-4">
-            <span className="text-gray-600 font-medium">Hazard Name:</span>
+            <span className="text-gray-600 font-medium">Processing Activity:</span>
             <span className="ml-2">{result.hazardName}</span>
           </div>
           <div className="mb-4">
@@ -66,7 +66,7 @@ export default function ResultDisplay({ result, onReset }: ResultDisplayProps) {
       </div>
       
       <div className="mt-6">
-        <h4 className="font-semibold mb-2">Recommended Actions:</h4>
+        <h4 className="font-semibold mb-2">Recommended Privacy Controls:</h4>
         <div 
           className="p-4 border border-gray-200 rounded-md bg-gray-50"
           dangerouslySetInnerHTML={{ 

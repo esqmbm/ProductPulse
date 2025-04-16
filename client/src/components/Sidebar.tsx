@@ -1,16 +1,16 @@
 export default function Sidebar() {
   const tools = [
     {
-      title: "TRIR",
-      description: "Calculate your Total Recordable Incident Rate."
+      title: "DPIA",
+      description: "Create Data Protection Impact Assessments for your processing activities."
     },
     {
-      title: "DART",
-      description: "The DART Rate Calculator is a helpful tool for determining your workplace's Days Away, Restricted, or Transferred (DART) rate."
+      title: "Consent Manager",
+      description: "Helpful tool for managing user consent preferences and tracking cookie compliance across your sites."
     },
     {
-      title: "MOC ROI",
-      description: "Measure the Return on Investment (ROI) associated with managing productivity impacts caused by incomplete or delayed MOC processes."
+      title: "PIA Score",
+      description: "Measure the Privacy Impact Assessment score for new projects and systems handling personal data."
     }
   ];
 

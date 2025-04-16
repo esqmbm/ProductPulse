@@ -3,11 +3,11 @@ export default function Header() {
     <header className="bg-[#001A33] text-white">
       <div className="container mx-auto px-4 py-16 md:py-20 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-8 md:mb-0">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Safety Risk Assessment Matrix Calculator</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">Privacy Risk Assessment Matrix Calculator</h1>
           <div className="flex items-center">
-            <a href="#" className="text-[#FF7F66] hover:underline">Workplace Safety</a>
+            <a href="#" className="text-[#FF7F66] hover:underline">Data Privacy</a>
             <span className="mx-2">|</span>
-            <span>Frontline Blog</span>
+            <span>Privacy Blog</span>
           </div>
         </div>
         
@@ -19,7 +19,7 @@ export default function Header() {
                 <div className="bg-white rounded-lg p-2 shadow-md">
                   <svg className="w-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="200" height="40" fill="#f0f0f0" />
-                    <text x="100" y="25" fontSize="14" fill="#333" textAnchor="middle">Safety Risk Matrix</text>
+                    <text x="100" y="25" fontSize="14" fill="#333" textAnchor="middle">Privacy Risk Matrix</text>
                     
                     <g transform="translate(0, 40)">
                       <rect width="40" height="30" fill="#ffffff" stroke="#ccc" />
@@ -62,7 +62,7 @@ export default function Header() {
                 </div>
               </div>
               <div className="w-full sm:w-1/2">
-                <h2 className="text-xl font-semibold mb-2">Safety risk assessment matrix calculator</h2>
+                <h2 className="text-xl font-semibold mb-2">Privacy risk assessment matrix calculator</h2>
                 <p className="text-sm mb-4">Input your data points and we'll do the rest.</p>
                 <a 
                   href="#calculator" 
