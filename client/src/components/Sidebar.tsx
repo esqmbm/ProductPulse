@@ -2,7 +2,7 @@ export default function Sidebar() {
   const tools = [
     {
       title: "DPIA",
-      description: "Create Data Protection Impact Assessments for your processing activities."
+      description: "Create Data Protection Impact Assessments for your high risk processing activities."
     },
     {
       title: "Risk Manager",
