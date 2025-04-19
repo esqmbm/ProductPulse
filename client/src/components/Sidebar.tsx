@@ -9,8 +9,8 @@ export default function Sidebar() {
       description: "Helpful tool for managing user risk."
     },
     {
-      title: "PIA Score",
-      description: "Measure the Privacy Impact Assessment score for new projects and systems handling personal data."
+      title: "PIA",
+      description: "Measure the Privacy Impact Assessment for new projects and systems handling personal data."
     }
   ];
 
