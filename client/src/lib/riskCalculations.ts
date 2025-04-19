@@ -42,7 +42,7 @@ export function calculateRiskLevel(score: number) {
   
   if (score >= 20 && score <= 25) {
     return { 
-      text: "Critical", 
+      text: "Severe", 
       colorClass: "bg-red-700" 
     };
   }
@@ -76,7 +76,7 @@ export function getRecommendations(score: number, level: string) {
       'Consider if legitimate interest assessment is needed',
       'Implement additional encryption or anonymization'
     ],
-    'Critical': [
+    'Severe': [
       'Processing should not proceed until risk is substantially reduced',
       'Full Data Protection Impact Assessment (DPIA) mandatory',
       'Executive leadership attention required',
