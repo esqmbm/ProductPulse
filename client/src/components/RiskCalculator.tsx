@@ -96,7 +96,7 @@ export default function RiskCalculator() {
               name="hazardName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="font-medium">Processing Activity:</FormLabel>
+                  <FormLabel className="font-medium">Processing Activity [Personal Data Used]:</FormLabel>
                   <FormControl>
                     <Input 
                       placeholder="Enter processing activity name" 
