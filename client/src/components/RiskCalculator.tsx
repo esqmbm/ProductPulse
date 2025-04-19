@@ -113,7 +113,7 @@ export default function RiskCalculator() {
               name="likelihood"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="font-medium">Likelihood (1-5):</FormLabel>
+                  <FormLabel className="font-medium">Probability (1-5):</FormLabel>
                   <Select 
                     onValueChange={field.onChange} 
                     defaultValue={field.value}

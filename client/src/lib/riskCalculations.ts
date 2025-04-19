@@ -4,7 +4,7 @@ export function getLikelihoodOptions() {
     { value: 2, label: "2 - Unlikely" },
     { value: 3, label: "3 - Possible" },
     { value: 4, label: "4 - Likely" },
-    { value: 5, label: "5 - Almost Certain" }
+    { value: 5, label: "5 - Very Likely" }
   ];
 }
 
