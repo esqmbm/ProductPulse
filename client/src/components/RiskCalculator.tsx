@@ -113,7 +113,7 @@ export default function RiskCalculator() {
               name="severity"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="font-medium">Impact Level (1-5):</FormLabel>
+                  <FormLabel className="font-medium">Impact Level (1-5) [Degree of Harm]:</FormLabel>
                   <Select 
                     onValueChange={field.onChange} 
                     defaultValue={field.value}
