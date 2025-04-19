@@ -83,7 +83,7 @@ export default function RiskCalculator() {
   return (
     <section id="calculator" className="md:w-3/4">
       <div className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-2xl font-bold mb-4">Privacy Risk Assessment Matrix Calculator</h2>
+        <h2 className="text-2xl font-bold mb-4">Privacy Risk Calculator</h2>
         
         <p className="mb-6">
           This web tool helps privacy professionals evaluate data processing activities by calculating a risk score from likelihood and impact severity ratings. It clearly indicates whether a privacy risk is Low, Moderate, High, or Critical, aiding in decision-making and privacy risk mitigation.
