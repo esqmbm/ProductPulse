@@ -5,7 +5,7 @@ export default function Sidebar() {
       description: "Create Data Protection Impact Assessments for your high risk processing activities."
     },
     {
-      title: "Risk Manager",
+      title: "Risk Management",
       description: "Helpful tool for managing user risk."
     },
     {
