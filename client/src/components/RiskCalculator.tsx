@@ -110,33 +110,6 @@ export default function RiskCalculator() {
             
             <FormField
               control={form.control}
-              name="likelihood"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="font-medium">Probability (1-5):</FormLabel>
-                  <Select 
-                    onValueChange={field.onChange} 
-                    defaultValue={field.value}
-                  >
-                    <FormControl>
-                      <SelectTrigger className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#007BFF] focus:border-[#007BFF]">
-                        <SelectValue placeholder="Select Likelihood" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      {getLikelihoodOptions().map((option) => (
-                        <SelectItem key={option.value} value={option.value.toString()}>
-                          {option.label}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </FormItem>
-              )}
-            />
-            
-            <FormField
-              control={form.control}
               name="severity"
               render={({ field }) => (
                 <FormItem>
@@ -152,6 +125,33 @@ export default function RiskCalculator() {
                     </FormControl>
                     <SelectContent>
                       {getSeverityOptions().map((option) => (
+                        <SelectItem key={option.value} value={option.value.toString()}>
+                          {option.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="likelihood"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-medium">Probability (1-5):</FormLabel>
+                  <Select 
+                    onValueChange={field.onChange} 
+                    defaultValue={field.value}
+                  >
+                    <FormControl>
+                      <SelectTrigger className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#007BFF] focus:border-[#007BFF]">
+                        <SelectValue placeholder="Select Likelihood" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      {getLikelihoodOptions().map((option) => (
                         <SelectItem key={option.value} value={option.value.toString()}>
                           {option.label}
                         </SelectItem>
