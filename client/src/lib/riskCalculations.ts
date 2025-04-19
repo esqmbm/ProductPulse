@@ -10,11 +10,11 @@ export function getLikelihoodOptions() {
 
 export function getSeverityOptions() {
   return [
-    { value: 1, label: "1 - Minimal" },
+    { value: 1, label: "1 - Minor" },
     { value: 2, label: "2 - Limited" },
-    { value: 3, label: "3 - Significant" },
-    { value: 4, label: "4 - Major" },
-    { value: 5, label: "5 - Severe" }
+    { value: 3, label: "3 - Moderate" },
+    { value: 4, label: "4 - Severe" },
+    { value: 5, label: "5 - Significant" }
   ];
 }
 

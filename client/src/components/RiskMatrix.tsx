@@ -39,7 +39,7 @@ export default function RiskMatrix({ likelihood, severity }: RiskMatrixProps) {
         <thead>
           <tr>
             <th className="p-2 border border-gray-300"></th>
-            <th className="p-2 border border-gray-300" colSpan={5}>Impact Severity</th>
+            <th className="p-2 border border-gray-300" colSpan={5}>Impact Level</th>
           </tr>
           <tr>
             <th className="p-2 border border-gray-300">Likelihood</th>

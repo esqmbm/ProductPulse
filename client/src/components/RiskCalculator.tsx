@@ -113,14 +113,14 @@ export default function RiskCalculator() {
               name="severity"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="font-medium">Severity (1-5):</FormLabel>
+                  <FormLabel className="font-medium">Impact Level (1-5):</FormLabel>
                   <Select 
                     onValueChange={field.onChange} 
                     defaultValue={field.value}
                   >
                     <FormControl>
                       <SelectTrigger className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#007BFF] focus:border-[#007BFF]">
-                        <SelectValue placeholder="Select Impact Severity" />
+                        <SelectValue placeholder="Select Impact" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
