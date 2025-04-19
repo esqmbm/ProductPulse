@@ -17,7 +17,7 @@ export default function Sidebar() {
   return (
     <aside className="md:w-1/4 mb-8 md:mb-0 md:pr-8">
       <div className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-xl font-semibold mb-4">Tools and calculators</h2>
+        <h2 className="text-xl font-semibold mb-4">Other Tools and Calculators</h2>
         <ul className="space-y-3">
           {tools.map((tool, index) => (
             <li key={index} className="flex items-start">
