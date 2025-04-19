@@ -6,8 +6,6 @@ export default function Header() {
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Privacy Risk Calculator</h1>
           <div className="flex items-center">
             <a href="#" className="text-[#FF7F66] hover:underline">Data Privacy</a>
-            <span className="mx-2">|</span>
-            <span>Privacy Blog</span>
           </div>
         </div>
         
