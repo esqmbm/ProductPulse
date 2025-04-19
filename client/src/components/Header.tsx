@@ -23,7 +23,7 @@ export default function Header() {
                     
                     <g transform="translate(0, 40)">
                       <rect width="40" height="30" fill="#ffffff" stroke="#ccc" />
-                      <text x="20" y="20" fontSize="12" fill="#333" textAnchor="middle">L/S</text>
+                      <text x="20" y="20" fontSize="12" fill="#333" textAnchor="middle">L/I</text>
                       
                       {[1, 2, 3, 4, 5].map((col, i) => (
                         <g key={`col-${col}`} transform={`translate(${40 + i * 32}, 0)`}>
